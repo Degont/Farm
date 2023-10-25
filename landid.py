@@ -2,9 +2,20 @@ import pygame
 import math
 
 class LandID():
-    def __init__(self,game):
+    def __init__(self,game,y,x):
         self.screen = game.screen
         self.screen_rect = game.screen.get_rect()
+        self.settings = game.settings
+
+        # Location
+        self.y = y # location y axis
+        self.x = x # location x axis
+
+        # Attributes
+        self._init_attributes()
+
+    def _init_attributes(self):
+
 
 
 
